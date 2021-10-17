@@ -1,0 +1,30 @@
+.divdropdown{
+    margin-top: 20%;
+}
+
+.App-logo-search-bar {
+    margin-top: 100px;
+    height: 200px;
+    pointer-events: none;
+  }
+  
+  mat-form-field {
+      background-color: thistle;
+      height: 60px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo-search-bar {
+      animation: App-logo-search-bar-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-search-bar-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

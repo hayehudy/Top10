@@ -1,0 +1,71 @@
+[   {
+    "id":1,
+    "name":"ג'וקר",
+    "category":"מתח",
+    "rank":10,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/8/89/Joker-2019-Heb-Poster.jpg/330px-Joker-2019-Heb-Poster.jpg"
+    },
+    {
+    "id":2,
+    "name":"מלך האריות",
+    "category":"דרמה",
+    "rank":9,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/b/b5/%D7%9E%D7%9C%D7%9A_%D7%94%D7%90%D7%A8%D7%99%D7%95%D7%AA_%D7%9B%D7%A8%D7%96%D7%94_%D7%A2%D7%91%D7%A8%D7%99%D7%AA_%D7%9E%D7%A7%D7%95%D7%A8%D7%99%D7%AA.png/375px-%D7%9E%D7%9C%D7%9A_%D7%94%D7%90%D7%A8%D7%99%D7%95%D7%AA_%D7%9B%D7%A8%D7%96%D7%94_%D7%A2%D7%91%D7%A8%D7%99%D7%AA_%D7%9E%D7%A7%D7%95%D7%A8%D7%99%D7%AA.png"
+    },
+    {
+    "id":3,
+    "name":"רבי יעקב",
+    "category":"קומדיה",
+    "rank":8,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/2/2b/Rabbi_Jacob.jpg/330px-Rabbi_Jacob.jpg"
+    },
+    {
+    "id":4,
+    "name":"הטוב הרע והמכוער",
+    "category":"דרמה",
+    "rank":7,
+    "image":"https://upload.wikimedia.org/wikipedia/he/c/c8/El_bueno_elfeo01.jpg"
+    },
+    {
+    "id":5,
+    "name":"חגיגה בסנוקר",
+    "category":"קומדיה",
+    "rank":6,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/1/11/HagigaBasnuker.jpg/330px-HagigaBasnuker.jpg"
+    },
+    {
+    "id":6,
+    "name":"המטרה: הבית הלבן",
+    "category":"פעולה",
+    "rank":5,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/5/54/Olympus_Has_Fallen.jpg/300px-Olympus_Has_Fallen.jpg"
+    },
+    {
+    "id":7,
+    "name":"התנגדות",
+    "category":"פעולה",
+    "rank":4,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/5/5e/Defianceposter08.jpg/300px-Defianceposter08.jpg"
+    },
+    {
+    "id":8,
+    "name":"הסנדק",
+    "category":"דרמה",
+    "rank":3,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/7/7b/TheGodfather.jpg/300px-TheGodfather.jpg"
+    },
+    {
+    "id":9,
+    "name":"בחזרה לעתיד",
+    "category":"מדע בדיוני",
+    "rank":2,
+    "image":"https://upload.wikimedia.org/wikipedia/he/thumb/8/80/Back_to_the_Future_-_The_Musical.jpg/250px-Back_to_the_Future_-_The_Musical.jpg"
+    },
+    {
+    "id":10,
+    "name":"האשמים",
+    "category":"מתח",
+    "rank":1,
+    "image":"https://upload.wikimedia.org/wikipedia/he/9/90/TheGuilty1.jpg"
+    }
+]

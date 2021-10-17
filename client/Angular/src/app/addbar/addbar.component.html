@@ -1,0 +1,72 @@
+<div>
+    <!-- <iframe src="https://www.youtube.com/embed?v=cxEa5ChEK9E&list=RDcxEa5ChEK9E&start_radio=1"></iframe> -->
+    <div class="buttons" *ngIf="!addMovie && !updateMovie">
+        <button class="up-button" (click)="addMovie=true; clicked=true">Add movie</button>
+        <button class="up-button" (click)="updateMovie=true; clicked=true">Update movie</button>
+    </div>
+    <div>{{newMovie.name}}</div>
+    <div class="add" *ngIf="addMovie">
+        <h2>ADD MOVIE</h2>
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" [(ngModel)]="newMovie.name">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+            <mat-label>Category</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let category of categories" value="category" (click)="newMovie.category=category">
+                {{category}}
+                </mat-option>
+            </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Grade</mat-label>
+                <input matInput type="number" min="1" max="10"  placeholder="Grade" [(ngModel)]="newMovie.grade">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Image URL</mat-label>
+                <input matInput placeholder="Image URL" [(ngModel)]="newMovie.imgurl">
+            </mat-form-field>
+            <div class="down-buttons">
+                <button class="down-button" (click)="setMovie(newMovie)" >Add</button>
+                <button class="down-button" (click)="close('add')">Close</button>
+            </div>
+            <div class="warn" >{{warn}}</div>
+    </div>
+
+    <div class="update" *ngIf="updateMovie">
+        <H2>UPDATE MOVIE</H2>
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let name of names" value="name" (click)="fill(name)">
+                {{name}}
+                </mat-option>
+            </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+            <mat-label>{{newMovie.category?newMovie.category: "Category"}}</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let category of categories" value="category" (click)="newMovie.category=category">
+                {{category}}
+                </mat-option>
+            </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Grade</mat-label>
+                <input matInput type="number" min="1" max="10"  placeholder="Grade" [(ngModel)]="newMovie.grade">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Image URL</mat-label>
+                <input matInput placeholder="Image URL" [(ngModel)]="newMovie.imgurl">
+            </mat-form-field>
+            <div class="down-buttons">
+                <button class="down-button" (click)="setToUpdate(newMovie)" >Update</button>
+                <button class="down-button" (click)="close('update')">Close</button>
+            </div>    
+    </div>
+    <div *ngIf="!clicked" class="app-logo-div" >
+        <img class="App-logo-search-bar " src="../../assets/imgmovie.svg" className="App-logo-add-bar" alt="logo" />
+    </div>
+</div>
+

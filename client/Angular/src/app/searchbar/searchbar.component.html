@@ -1,0 +1,20 @@
+<div class="divdropdown">
+    <mat-form-field appearance="fill" (click)="clicked=true">
+        <mat-label>Select a category</mat-label>
+        <mat-select [(value)]="selected" (click)="clicked=!clicked">
+        `<mat-option [value]="" (click)="setSearch(''); clicked=!clicked">
+                All movies
+        </mat-option>
+          <mat-option *ngFor="let category of categories" [value]="category" (click)="setSearch(category);clicked=!clicked">
+            {{category}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+    <div *ngIf="!clicked" class="app-logo-div" >
+        <img class="App-logo-search-bar " src="../../assets/imgmovie.svg" className="App-logo-add-bar" alt="logo" />
+    </div>
+
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="Home">
+    <header class="Home-header">
+      <span><h1>TOP 10 MOVIES</h1></span>
+      <img src="../../assets/imgmovie.svg" class="App-logo" alt="logo" />
+    </header>
+    <div class="moviesbar">
+      <div *ngIf="movies.length>0">  
+          <div *ngIf="selectedCatgory"><h3> {{selectedCatgory}} movies ({{movies.length}} movies)</h3></div>    
+        <div *ngFor="let movie of movies">
+            <div style="color:white">{{movie.name}}</div>
+            <img class="image" [src]="movie.imgurl" (click)="showDetails(movie.name)"/>     
+            <div *ngIf="name===movie.name&&show">
+            <div>the Category: {{movie.category}}</div>
+            <div>the Grade: {{movie.grade}}</div>
+            <div style="height:30px"></div>           
+        </div> 
+      </div>
+    </div>
+  
+  <app-searchbar class="searchbar" (search)="getMovies($event)"></app-searchbar>
+  <app-addbar class="addbar" (movieToAdd)="addmovie($event)" (movieToUpdate)="updatemovie($event)" [names]="names" [movies]="movies"></app-addbar>
+  </div>

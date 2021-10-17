@@ -1,0 +1,79 @@
+mat-form-field {
+    background-color: thistle;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+input {
+  color:black
+}
+
+.add{
+  margin-top: 20%;
+}
+
+.update{
+  margin-top: 20%;
+}
+
+.buttons{
+    margin-top: 20%;
+}
+
+.up-button{
+    margin-left: 10px;
+    border-style: solid;
+    border-radius: 8%;
+    background-color:thistle;
+    color:black;
+    height: 50px;
+    font-size:x-large;
+}
+
+.down-buttons{
+    width: 64%;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.down-button{
+    margin-left: 10px;
+    border-style: solid;
+    border-radius: 8%;
+    background-color: white;
+    color: blue;
+    height: 30px;
+    font-size: medium;
+}
+
+.warn{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    color: red;
+    background-color: white;
+}
+
+.App-logo-search-bar {
+    margin-top: 100px;
+    height: 200px;
+    pointer-events: none;
+  }
+
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo-search-bar {
+      animation: App-logo-search-bar-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-search-bar-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

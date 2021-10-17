@@ -1,0 +1,48 @@
+.container {
+    align-items: center;
+    width: 86%;
+    margin-top: 20%;
+    margin-left: 7%;
+}
+
+.input {
+    height: 30px;
+}
+
+/* .dropdown-basic-button .dropdown .btn {background: white; color:rgba(255, 255, 255, 0.212); width:100%; margin-bottom: 30px;}
+.dropdown .btn:hover {background: cyan; color:#000;}
+.dropdown .btn:active {background: cyan; color:#000;}
+.dropdown .btn:focus {background: cyan; color:#000;} */
+
+.dropdown-basic-button .dropdown-toggle {
+width: 100% !important;
+background: white;
+color: gray;
+text-align: left;
+}
+
+.App-logo-add-bar {
+    margin-top: 10px;
+    height: 200px;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo-add-bar {
+      animation: App-logo-add-bar-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-add-bar-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .app-logo-div{
+      margin-top: 30%;
+  }
