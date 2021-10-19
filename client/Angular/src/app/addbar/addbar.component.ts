@@ -16,7 +16,7 @@ export class AddbarComponent implements OnInit {
   newMovie: Movie={
     name: "",
     category: "",
-    grade: 0,
+    grade: null,
     imgurl: "",
   };
   clicked: boolean= false;
@@ -36,7 +36,7 @@ export class AddbarComponent implements OnInit {
       if (check) {
         this.warn="Fill in all the details"
       }
-      else if (this.newMovie.grade<1 || this.newMovie.grade>10){
+      else if (this.newMovie.grade && (this.newMovie.grade<1 || this.newMovie.grade>10)){
         this.warn="Fill a grade between 1 and 10"}
       else
       {this.movieToAdd.emit(value);

@@ -25,8 +25,8 @@ const MovieSchema = new mongoose.Schema({
 const Movie= mongoose.model("Movie",MovieSchema);
 
 const connectDb = () => {    
-  // const db_address=process.env.DB_ADDRESS;
-  const db_address=process.env.LOCAL_DB;
+  const db_address=process.env.DB_ADDRESS;
+  // const db_address=process.env.LOCAL_DB;
     return mongoose.connect(
       db_address,
       { useNewUrlParser: true,

@@ -76,7 +76,7 @@ function Bar({movies, setMovies , names,setNames}){
 
 return(
     <div className="container">
-      <iframe src="https://www.youtube.com/embed?v=cxEa5ChEK9E&list=RDcxEa5ChEK9E&start_radio=1"></iframe> 
+      {/* <iframe src="https://www.youtube.com/embed?v=cxEa5ChEK9E&list=RDcxEa5ChEK9E&start_radio=1"></iframe>  */}
       {/* <ReactPlayer url="https://www.youtube.com/watch?v=ezs5QvWBtf4" controls={true}/> */}
 
       {!showAdd && !showUpdate &&

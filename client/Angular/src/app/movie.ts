@@ -2,6 +2,6 @@ export interface Movie{
 id?: any,
 name: string,
 category: string,
-grade: number,
+grade: number | null,
 imgurl: string,
 }
