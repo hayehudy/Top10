@@ -140,7 +140,7 @@ app.put("/Movies/angular/Update", async (req, res) => {
         } else {
           movies = await Movie.find().sort({ grade: 1 }).exec();
         }
-        console.log(movies)
+        
         res.send(movies);      
     })
 
@@ -172,6 +172,7 @@ app.put("/Movies/angular/Update", async (req, res) => {
       await Movie.deleteMany({}).exec();
       await Movie.collection.insertMany(movies);
 
+      console.log(movies)
       res.send(movies);
     })
 
