@@ -39,7 +39,8 @@ function Bar({movies, setMovies , names,setNames}){
             imgurl: ImageUrl
           }
           // axios.post(server+"/Movies",obj)
-          axios.post("http://localhost:8000/Movies/Add",obj)
+          axios.post("/Movies/Add",obj)
+          // axios.post("http://localhost:8000/Movies/Add",obj)
           .then(res=>{
             setMovies(res.data);
             let theNames=[];
@@ -64,7 +65,8 @@ function Bar({movies, setMovies , names,setNames}){
           imgurl: ImageUrl? ImageUrl:update.imgurl
         }
         // axios.put(server+"/Movies",obj)
-        axios.put("http://localhost:8000/Movies/Update",obj)
+        axios.put("/Movies/Update",obj)
+        // axios.put("http://localhost:8000/Movies/Update",obj)
         .then(res=>{    
           setMovies(res.data);
           let theNames = [];

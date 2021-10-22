@@ -14,6 +14,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/', express.static('client/React/build'));
 
 const MovieSchema = new mongoose.Schema({
   name: String,
@@ -48,6 +49,11 @@ const connectDb = () => {
 //     let movies = await Movie.find().sort({ grade: 1 }).exec();
 //     res.send(movies);      
 // })
+
+// app.get('*', (req, res) => {
+//   res.sendFile(__dirname+'/client/React/build/index.html');
+// });
+
 
 app.get("/Movies/angular/Search", async (req, res) => {
   const search = req.query.search;
@@ -134,6 +140,7 @@ app.put("/Movies/angular/Update", async (req, res) => {
         } else {
           movies = await Movie.find().sort({ grade: 1 }).exec();
         }
+        console.log(movies)
         res.send(movies);      
     })
 

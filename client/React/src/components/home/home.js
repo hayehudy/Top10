@@ -17,7 +17,8 @@ useEffect(()=>{
 // for server of dotnet:
 // axios.get(server+'/Movies/Search?search='+search)
 
-axios.get(`http://localhost:8000/Movies/Search?search = ${search}`)
+axios.get(`/Movies/Search?search = ${search}`)
+// axios.get(`http://localhost:8000/Movies/Search?search = ${search}`)
 // axios.get("http://localhost:8000/Movies/Search", { params: { search: search } }) // another way to same action
 .then (res=>{
 setMovies(res.data);
