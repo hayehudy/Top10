@@ -17,8 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "heroku-postbuild": "cd client && cd React && npm i && npm run build",
-    "dev": "concurrently \"nodemon index.js\" \"cd client && cd React && npm start\""
+    "heroku-postbuild": "cd client && cd Angular && npm i && ng build",
+    "dev": "concurrently \"nodemon index.js\" \"cd client && cd Angular && ng serve\""
   },
   "author": "",
   "license": "ISC"
