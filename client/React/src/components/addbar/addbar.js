@@ -27,6 +27,7 @@ function Bar({movies, setMovies , names,setNames}){
     }
 
     function sendAdd(){
+      setSuccess("");
         let id=0;
         movies.forEach((e)=>{if(e.id>id){id=e.id}});
 
@@ -56,6 +57,7 @@ function Bar({movies, setMovies , names,setNames}){
     }
 
     function sendUpdate(){
+      setSuccess("");
         let obj={
           id: update.id,
           // _id:update._id,
@@ -67,7 +69,7 @@ function Bar({movies, setMovies , names,setNames}){
         // axios.put(server+"/Movies",obj)
         axios.put("/Movies/Update",obj)
         // axios.put("http://localhost:8000/Movies/Update",obj)
-        .then(res=>{    
+        .then(res=>{   
           setMovies(res.data);
           let theNames = [];
           res.data.forEach((m)=>theNames.push(m.name));  
