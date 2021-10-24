@@ -51,7 +51,7 @@ const connectDb = () => {
 //     res.send(movies);      
 // })
 
-
+// This function causes an error
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname+'/client/React/build/index.html'));
 // });
