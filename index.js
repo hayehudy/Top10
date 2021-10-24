@@ -14,8 +14,8 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use('/', express.static('client/React/build'));
-app.use('/', express.static('client/Angular/dist'));
+app.use('/', express.static('client/React/build'));
+// app.use('/', express.static('client/Angular/dist'));
 
 const MovieSchema = new mongoose.Schema({
   name: String,

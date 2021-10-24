@@ -12,7 +12,7 @@ import { MovieService } from '../movie.service';
 export class HomeComponent implements OnInit {
 
   error = '';
-  server=environment.server;
+  // server=environment.server;
   name:string = "";
   movies:Movie[] = [];
   names:string[] = [];
