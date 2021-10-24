@@ -8,7 +8,7 @@ import { Movie } from './movie';
 })
 export class MovieService {
 
-  baseUrl = "http://localhost:8000/Movies/angular";
+  baseUrl = "/Movies/angular";
 
   constructor(private http : HttpClient) {}
   
