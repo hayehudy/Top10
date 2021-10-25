@@ -52,12 +52,14 @@ const connectDb = () => {
 // })
 
 // This function causes an error
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname+'/client/React/build/index.html'));
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(__dirname+'/client/Angular/dist/index.html'));
+  // res.sendFile(path.join(__dirname+'/client/React/build/index.html'));
 // });
 
 
 app.get("/Movies/angular/Search", async (req, res) => {
+  console.log("yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
   const search = req.query.search;
   let movies = [];
   if (search) {
@@ -67,6 +69,7 @@ app.get("/Movies/angular/Search", async (req, res) => {
   } else {
     movies = await Movie.find().sort({ grade: 1 }).exec();
   }
+  console.log(movies)
   res.send(movies);      
 })
 
